@@ -1,9 +1,9 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
 	const count=[];
-	//will count the frequency of charchter present in string
+	//will count the frequency of charchter present in string.
 	for(let i=0;i<str.length;i++){
-		count[str[i]]=(count[str[i]] || 0)++;
+		count[str[i]]=(count[str[i]] || 0)+1;
 	}
 	for(let i=0;i<str.length;i++){
 		if(count[str[i]]===1){
@@ -14,5 +14,6 @@ function firstNonRepeatedChar(str) {
 }
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
+
 
 
